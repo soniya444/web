@@ -1,0 +1,13 @@
+.background-image {
+    background: url('1.png.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#loginForm input:focus {
+    border-color: #6366F1; /* Tailwind Indigo 600 */
+    box-shadow: 0 0 0 1px #6366F1;
+}

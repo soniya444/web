@@ -1,0 +1,79 @@
+/* TailwindCSS is already being used for styling, so this is additional custom CSS if needed */
+
+body {
+    background-color: #e5e7eb; /* This is the same as bg-gray-200 */
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    color: #1f2937; /* This is the same as text-gray-900 */
+}
+
+h3 {
+    color: #374151; /* This is the same as text-gray-800 */
+}
+
+#resultsTitle {
+    color: #1f2937; /* Slightly darker shade for the title */
+}
+
+#flights h3, #buses h3, #hotels h3 {
+    color: #2563eb; /* Indigo color for section headers */
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem; /* Adds spacing between list items */
+}
+
+.bg-opacity-90 {
+    background: rgba(255, 255, 255, 0.9); /* Ensures the background is slightly transparent */
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* Slight rounding of the corners */
+}
+
+.p-8 {
+    padding: 2rem; /* Adds padding inside the container */
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-2xl {
+    max-width: 42rem; /* Adjusts the maximum width of the container */
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem; /* Spacing below elements */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}

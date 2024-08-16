@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .background-image {
+            background: url('path/to/your/image.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        /* Added custom styles for hover effects and transitions */
+        nav a {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        nav a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+        .location-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .location-card:hover img {
+            transform: scale(1.1);
+        }
+        .location-card h3 {
+            transition: color 0.3s ease-in-out;
+        }
+        .location-card:hover h3 {
+            color: #1D4ED8; /* Tailwind's blue-700 */
+        }
+    </style>
+</head>
+<body class="background-image bg-gray-200">
+    <div class="container mx-auto px-4 py-16">
+        <!-- Navigation bar -->
+        <div class="bg-white bg-opacity-90 rounded-t-lg shadow-lg p-4">
+            <nav class="flex justify-around">
+                <a href="#" class="text-center">
+                    <img src="aeroplane.png" alt="Flights" class="mx-auto">
+                    <span class="block text-sm">Flights</span>
+                </a>
+                <a href="#" class="text-center">
+                    <img src="hotel.png" alt="Hotels" class="mx-auto">
+                    <span class="block text-sm">Hotels</span>
+                </a>
+              
+                <a href="#" class="text-center">
+                    <img src="20.png" alt="Buses" class="mx-auto">
+                    <span class="block text-sm">Buses</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Search form -->
+        <div class="form-container bg-white bg-opacity-90 rounded-b-lg shadow-lg p-8 mt-4">
+            <form class="space-y-4" action="search-results.html" method="get">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div>
+                        <label for="location" class="block text-sm font-medium text-gray-700">City, Property Name Or Location</label>
+                        <input type="text" id="location" name="location" class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" value="Mustang">
+                    </div>
+                    <div>
+                        <label for="checkin" class="block text-sm font-medium text-gray-700">Check-In</label>
+                        <input type="date" id="checkin" name="checkin" class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="checkout" class="block text-sm font-medium text-gray-700">Check-Out</label>
+                        <input type="date" id="checkout" name="checkout" class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <!-- Additional fields -->
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">SEARCH</button>
+                </div>
+            </form>
+            
+        </div>
+
+        <!-- Locations list -->
+        <div class="bg-white bg-opacity-90 rounded-lg shadow-lg p-8 mt-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="location-card flex items-center">
+                    <img src="mustang.png" alt="Mustang" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Mustang</h3>
+                        <p class="text-sm text-gray-500">Homestays - Villas & Apts</p>
+                    </div>
+                </div>
+                <div class="location-card flex items-center">
+                    <img src="chandragiri.png" alt="Chandragiri" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Chandragiri</h3>
+                        <p class="text-sm text-gray-500">Homestays - Villas & Apts</p>
+                    </div>
+                </div>
+                <div class="location-card flex items-center">
+                    <img src="manang.png" alt="Manang" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Manang</h3>
+                        <p class="text-sm text-gray-500">Homestays - Villas & Apts</p>
+                    </div>
+                </div>
+                <div class="location-card flex items-center">
+                    <img src="7.png" alt="Bhojpur" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Bhojpur</h3>
+                        <p class="text-sm text-gray-500">Homestays - Villas & Apts</p>
+                    </div>
+                </div>
+                <div class="location-card flex items-center">
+                    <img src="12.jpg" alt="Ilam" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Ilam</h3>
+                        <p class="text-sm text-gray-500">Homestays - Villas & Apts</p>
+                    </div>
+                </div>
+                <div class="location-card flex items-center">
+                    <img src="janakpur.png" alt="Janakpur" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Janakpur</h3>
+                        <p class="text-sm text-gray-500">Homestays - Villas & Apts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </
